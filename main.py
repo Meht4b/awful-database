@@ -11,7 +11,7 @@ class database:
         except:
             pass
     
-    #columns = [[column1,type]
+    #columns = [[column1,type]..]
     def create_table(self,name:str,columns:list):
 
         if os.path.isfile(self.table_path(name)):

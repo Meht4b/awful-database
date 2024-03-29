@@ -63,7 +63,6 @@ class database:
     #shows table structure
     def show_table(self,table:str):
         f = open(self.table_path(table),'rb')
-        f.close()
         return pickle.load(f)
 
     #columns = which columns to check for eg [name,id]
